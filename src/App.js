@@ -1,10 +1,11 @@
 import './App.css';
+import LeftNavbar from './components/leftNavbar/LeftNavbar';
 
 export default function App()
 {
   return (
     <div className="app-container">
-      Hello from app
+      <LeftNavbar />
     </div>
   );
 }

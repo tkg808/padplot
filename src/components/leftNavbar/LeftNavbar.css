@@ -1,0 +1,36 @@
+nav.nav-container
+{
+  width: 100px;
+  height: 1024px;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+div.nav-top-container
+{
+  width: 100px;
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.nav-logo-container
+{
+  margin-top: 57px;
+}
+
+img.nav-logo
+{
+  width: 64px;
+}
+
+div.nav-top-icon-container
+{
+  width: 40px;
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
