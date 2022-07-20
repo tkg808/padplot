@@ -54,6 +54,7 @@ div.nav-pill-container
   border-radius: 50px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .pill-person-icon

@@ -1,0 +1,39 @@
+div.user-overlay-container
+{
+  width: 241px;
+  height: 287px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  position: absolute;
+  top: -305px;
+  left: 10px;
+}
+
+div.user-overlay-container::before, div.user-overlay-container::after
+{
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.15) transparent transparent transparent;
+  position: absolute;
+  bottom: -15px;
+  left: 15px;
+}
+
+div.user-overlay-container::after
+{
+  border-top-color: #FFFFFF;
+  border-width: 10px 15px 0 15px;
+  bottom: -9.5px;
+  left: 16px;
+}
+
+div.user-overlay-container::before
+{
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-width: 10px 15px 0 15px;
+  bottom: -10.5px;
+  left: 16px;
+}
