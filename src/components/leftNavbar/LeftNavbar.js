@@ -1,4 +1,5 @@
 import './LeftNavbar.css';
+import { Link } from 'react-router-dom';
 import logo from '../../res/padplot_logo.png';
 import { MdOutlineHome, MdHome } from 'react-icons/md';
 import { AiOutlineBell, AiFillBell } from 'react-icons/ai';
@@ -6,7 +7,7 @@ import { BsBarChart, BsBarChartFill, BsFileText, BsFileTextFill } from 'react-ic
 import { IoPersonCircle } from 'react-icons/io5';
 import { GoChevronDown } from 'react-icons/go';
 
-export default function LeftNavbar()
+export default function LeftNavbar({ currPage, setCurrPage })
 {
   return (
     <nav className="nav-container">
@@ -15,12 +16,35 @@ export default function LeftNavbar()
           <img src={logo} alt="nav-logo" className="nav-logo" />
         </div>
         <div className="nav-top-icon-container">
-          <MdHome className="nav-icon" size={21} />
-          <AiFillBell className="nav-icon" size={17} />
-          <BsBarChartFill className="nav-icon" size={18.5} />
-          <BsFileTextFill className="nav-icon" size={13} />
+          <Link to="" onClick={() => setCurrPage("home")}>
+            {
+              currPage === "home" ?
+                <MdHome className="nav-icon" size={21} /> :
+                <MdOutlineHome className="nav-icon" size={21} />
+            }
+          </Link>
+          <Link to="" onClick={() => setCurrPage("alerts")}>
+            {
+              currPage === "alerts" ?
+                <AiFillBell className="nav-icon" size={17} /> :
+                <AiOutlineBell className="nav-icon" size={17} />
+            }
+          </Link>
+          <Link to="" onClick={() => setCurrPage("stats")}>
+            {
+              currPage === "stats" ?
+                <BsBarChartFill className="nav-icon" size={18.5} /> :
+                <BsBarChart className="nav-icon" size={18.5} />
+            }
+          </Link>
+          <Link to="" onClick={() => setCurrPage("files")}>
+            {
+              currPage === "files" ?
+                <BsFileTextFill className="nav-icon" size={13} /> :
+                <BsFileText className="nav-icon" size={13} />
+            }
+          </Link>
         </div>
-
       </div>
       <div className="nav-bot-container">
         <div className="nav-pill-container">
