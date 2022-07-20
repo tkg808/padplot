@@ -20,8 +20,12 @@ export default function LeftNavbar()
           <BsBarChartFill className="nav-icon" size={18.5} />
           <BsFileTextFill className="nav-icon" size={13} />
         </div>
-        <div className="nav-bot-container">
 
+      </div>
+      <div className="nav-bot-container">
+        <div className="nav-pill-container">
+          <IoPersonCircle className="pill-person-icon" size={32} />
+          <GoChevronDown className="pill-arrow-icon" size={16} />
         </div>
       </div>
     </nav>

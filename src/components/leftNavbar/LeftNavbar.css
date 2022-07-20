@@ -34,3 +34,29 @@ div.nav-top-icon-container
   justify-content: space-evenly;
   align-items: center;
 }
+
+div.nav-bot-container
+{
+  width: 100px;
+  height: 512px;
+  padding-bottom: 79px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+div.nav-pill-container
+{
+  width: 58px;
+  height: 37px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.pill-person-icon
+{
+  margin-left: 3px;
+}
