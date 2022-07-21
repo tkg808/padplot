@@ -1,5 +1,4 @@
 import './LeftNavbar.css';
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../res/padplot_logo.png';
 import { MdOutlineHome, MdHome } from 'react-icons/md';
@@ -9,15 +8,8 @@ import { IoPersonCircle } from 'react-icons/io5';
 import { GoChevronDown } from 'react-icons/go';
 import UserOverlay from './userOverlay/UserOverlay';
 
-export default function LeftNavbar({ currPage, setCurrPage })
+export default function LeftNavbar({ currPage, setCurrPage, showOverlay, setShowOverlay })
 {
-  const [showOverlay, setShowOverlay] = useState(false);
-
-  useEffect(() => 
-  {
-    showOverlay ? console.log("Showing") : console.log("Hiding");
-  }, [showOverlay]);
-
   return (
     <nav className="nav-container">
       <div className="nav-top-container">
