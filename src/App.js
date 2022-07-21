@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import LeftNavbar from './components/leftNavbar/LeftNavbar';
+import RightNavbar from './components/rightNavbar/RightNavbar';
 
 export default function App()
 {
@@ -22,6 +23,7 @@ export default function App()
       <main className="main-container">
 
       </main>
+      <RightNavbar />
     </div>
   );
 }
