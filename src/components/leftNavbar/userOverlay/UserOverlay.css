@@ -1,12 +1,12 @@
 div.user-overlay-container
 {
   width: 241px;
-  height: 287px;
+  height: 275px;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 3px;
   position: absolute;
-  top: -305px;
+  top: -295px;
   left: 10px;
 }
 
@@ -36,4 +36,32 @@ div.user-overlay-container::before
   border-width: 10px 15px 0 15px;
   bottom: -10.5px;
   left: 16px;
+}
+
+div.user-overlay-section
+{
+  width: 100%;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+div.user-overlay-top-section
+{
+  height: 82px;
+  padding-top: 22px;
+}
+
+div.user-overlay-middle-section
+{
+  height: 131px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+div.user-overlay-item
+{
+  width: 100%;
+  padding: 0 0 10px 21px;
 }
