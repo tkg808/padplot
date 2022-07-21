@@ -19,6 +19,9 @@ export default function App()
         setCurrPage={setCurrPage}
         showOverlay={showOverlay}
         setShowOverlay={setShowOverlay} />
+      <main className="main-container">
+
+      </main>
     </div>
   );
 }

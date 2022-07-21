@@ -1,0 +1,9 @@
+div.app-container
+{
+  display: flex;
+}
+
+main.main-container
+{
+  width: 978px;
+}
