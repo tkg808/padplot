@@ -11,44 +11,44 @@ import UserOverlay from './userOverlay/UserOverlay';
 export default function LeftNavbar({ currPage, setCurrPage, showOverlay, setShowOverlay })
 {
   return (
-    <nav className="nav-container">
-      <div className="nav-top-container">
-        <div className="nav-logo-container">
-          <img src={logo} alt="nav-logo" className="nav-logo" />
+    <nav className="left-nav-container">
+      <div className="left-nav-top-container">
+        <div className="left-nav-logo-container">
+          <img src={logo} alt="nav-logo" className="left-nav-logo" />
         </div>
-        <div className="nav-top-icon-container">
+        <div className="left-nav-top-icon-container">
           <Link to="" onClick={() => setCurrPage("home")}>
             {
               currPage === "home" ?
-                <MdHome className="nav-icon" size={21} /> :
-                <MdOutlineHome className="nav-icon" size={21} />
+                <MdHome className="left-nav-icon" size={21} /> :
+                <MdOutlineHome className="left-nav-icon" size={21} />
             }
           </Link>
           <Link to="" onClick={() => setCurrPage("alerts")}>
             {
               currPage === "alerts" ?
-                <AiFillBell className="nav-icon" size={17} /> :
-                <AiOutlineBell className="nav-icon" size={17} />
+                <AiFillBell className="left-nav-icon" size={17} /> :
+                <AiOutlineBell className="left-nav-icon" size={17} />
             }
           </Link>
           <Link to="" onClick={() => setCurrPage("stats")}>
             {
               currPage === "stats" ?
-                <BsBarChartFill className="nav-icon" size={18.5} /> :
-                <BsBarChart className="nav-icon" size={18.5} />
+                <BsBarChartFill className="left-nav-icon" size={18.5} /> :
+                <BsBarChart className="left-nav-icon" size={18.5} />
             }
           </Link>
           <Link to="" onClick={() => setCurrPage("files")}>
             {
               currPage === "files" ?
-                <BsFileTextFill className="nav-icon" size={13} /> :
-                <BsFileText className="nav-icon" size={13} />
+                <BsFileTextFill className="left-nav-icon" size={13} /> :
+                <BsFileText className="left-nav-icon" size={13} />
             }
           </Link>
         </div>
       </div>
-      <div className="nav-bot-container">
-        <div className="nav-pill-container" onClick={() => setShowOverlay(!showOverlay)}>
+      <div className="left-nav-bot-container">
+        <div className="left-nav-pill-container" onClick={() => setShowOverlay(!showOverlay)}>
           {showOverlay && <UserOverlay />}
           <IoPersonCircle className="pill-person-icon" size={32} />
           <GoChevronDown className="pill-arrow-icon" size={16} />

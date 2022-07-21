@@ -1,11 +1,11 @@
-nav.nav-container
+nav.left-nav-container
 {
   width: 100px;
   height: 1024px;
   border-right: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-div.nav-top-container
+div.left-nav-top-container
 {
   width: 100px;
   height: 512px;
@@ -14,17 +14,17 @@ div.nav-top-container
   align-items: center;
 }
 
-div.nav-logo-container
+div.left-nav-logo-container
 {
   margin-top: 57px;
 }
 
-img.nav-logo
+img.left-nav-logo
 {
   width: 64px;
 }
 
-div.nav-top-icon-container
+div.left-nav-top-icon-container
 {
   width: 40px;
   height: 100%;
@@ -35,7 +35,7 @@ div.nav-top-icon-container
   align-items: center;
 }
 
-div.nav-bot-container
+div.left-nav-bot-container
 {
   width: 100px;
   height: 512px;
@@ -46,7 +46,7 @@ div.nav-bot-container
   align-items: center;
 }
 
-div.nav-pill-container
+div.left-nav-pill-container
 {
   width: 58px;
   height: 37px;
