@@ -3,6 +3,7 @@ import './HomePage.css';
 export default function HomePage()
 {
   const tabs = ["Overview", "Recent"];
+
   return (
     <div className="home-page-contaner">
       <div className="home-page-tabs-container">
@@ -16,7 +17,15 @@ export default function HomePage()
         })}
       </div>
       <div className="home-page-cards-container">
-        Hello from cards
+        <div className="card-container">
+          Plan
+        </div>
+        <div className="card-container">
+          Design
+        </div>
+        <div className="card-container">
+          Build
+        </div>
       </div>
       <div className="home-page-report-container">
         Hello from report
