@@ -4,6 +4,8 @@ import logo from '../../res/padplot_logo.png';
 
 export default function RightNavbar()
 {
+  const topics = ["Stocks", "Technology", "Business", "Finance", "Real Estate", "Real Estate"];
+
   return (
     <nav className="right-nav-container">
       <div className="right-nav-logo-container">
@@ -30,6 +32,19 @@ export default function RightNavbar()
           <div className="right-nav-title-container">
             <div className="right-nav-title-dot" />
             <h4 className="right-nav-recommendations-title">Recommended topics</h4>
+          </div>
+          <div className="right-nav-recommendations-container">
+            {topics.map((topic, index) =>
+            {
+              return (
+                <div
+                  className="recommendations-topic-pill"
+                  key={index}
+                  title={topic}>
+                  {topic}
+                </div>
+              )
+            })}
           </div>
         </section>
       </div>

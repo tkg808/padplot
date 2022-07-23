@@ -85,3 +85,22 @@ div.right-nav-title-dot
   background-color: #387649;
   border-radius: 50%;
 }
+
+div.right-nav-recommendations-container
+{
+  width: 240px;
+  margin: 32px 0 0 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+div.recommendations-topic-pill
+{
+  padding: 5px 10px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #E9E9E9;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 12px;
+}
