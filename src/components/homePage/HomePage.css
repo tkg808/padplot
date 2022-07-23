@@ -81,10 +81,23 @@ div.home-page-report-dropdown-container
   width: 151px;
   height: 26px;
   padding: 6px 16px 5px 16px;
+  margin-bottom: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 10px;
   color: #9E9E9E;
   background-color: #EEEEEE;
+}
+
+div.home-page-report-info-container
+{
+  height: 84px;
+}
+
+div.home-page-report-info
+{
+  width: 452px;
+  height: 21px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
