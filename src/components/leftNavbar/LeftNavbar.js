@@ -24,23 +24,23 @@ export default function LeftNavbar({ currPage, setCurrPage, showOverlay, setShow
                 <MdOutlineHome className="left-nav-icon" size={21} />
             }
           </Link>
-          <Link to="" onClick={() => setCurrPage("alerts")}>
+          <Link to="" onClick={() => setCurrPage("notifications")}>
             {
-              currPage === "alerts" ?
+              currPage === "notifications" ?
                 <AiFillBell className="left-nav-icon" size={17} /> :
                 <AiOutlineBell className="left-nav-icon" size={17} />
             }
           </Link>
-          <Link to="" onClick={() => setCurrPage("stats")}>
+          <Link to="" onClick={() => setCurrPage("analytics")}>
             {
-              currPage === "stats" ?
+              currPage === "analytics" ?
                 <BsBarChartFill className="left-nav-icon" size={18.5} /> :
                 <BsBarChart className="left-nav-icon" size={18.5} />
             }
           </Link>
-          <Link to="" onClick={() => setCurrPage("files")}>
+          <Link to="" onClick={() => setCurrPage("newProject")}>
             {
-              currPage === "files" ?
+              currPage === "newProject" ?
                 <BsFileTextFill className="left-nav-icon" size={13} /> :
                 <BsFileText className="left-nav-icon" size={13} />
             }
