@@ -1,0 +1,18 @@
+div.home-page-container
+{
+  display: flex;
+  flex-direction: column;
+}
+
+div.home-page-tabs-container
+{
+  width: 360px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 43px;
+}
+
+div.page-tab
+{
+  padding: 10px 0 16px;
+}
