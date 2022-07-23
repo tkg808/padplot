@@ -1,0 +1,38 @@
+div.card-container
+{
+  width: 187px;
+  height: 260px;
+  background-color: #FAFAFA;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+p.card-title
+{
+  font-size: 20px;
+}
+
+span.card-title-bold
+{
+  font-weight: 700;
+}
+
+img.card-image
+{
+  width: 84px;
+  height: 71px;
+}
+
+button.card-button
+{
+  width: 80px;
+  height: 34px;
+  font-size: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 2px;
+}

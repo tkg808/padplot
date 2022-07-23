@@ -24,12 +24,3 @@ div.home-page-cards-container
   display: flex;
   justify-content: space-between;
 }
-
-div.card-container
-{
-  width: 187px;
-  height: 260px;
-  background-color: #FAFAFA;
-  border: 1px solid rgba(0, 0, 0, 0.20);
-  border-radius: 5px;
-}

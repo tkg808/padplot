@@ -1,9 +1,11 @@
+import './HomeCard.css';
+
 export default function HomeCare({ number, title, image })
 {
   return (
     <div className="card-container">
       <div className="card-title-container">
-        <p className="card-title-number">
+        <p className="card-title">
           0{number}. <span className="card-title-bold">{title}</span>
         </p>
       </div>
