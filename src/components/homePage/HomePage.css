@@ -24,3 +24,53 @@ div.home-page-cards-container
   display: flex;
   justify-content: space-between;
 }
+
+div.home-page-report-container
+{
+  width: 615px;
+  height: 207px;
+  padding: 27px 24px 0 62px;
+  background-color: #FAFAFA;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+div.home-page-report-top-row-container
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+div.home-page-report-top-left-container
+{
+  padding: 2px 0;
+  display: flex;
+  gap: 31px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+div.home-page-report-total-home-value
+{
+  color: #387649;
+}
+
+div.home-page-report-top-right-container
+{
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+div.home-page-report-full-link-container
+{
+  display: flex;
+  align-items: center;
+}
+
+a.home-page-report-full-link
+{
+  padding-bottom: 1px;
+  font-size: 10px;
+  color: #006CCF;
+}

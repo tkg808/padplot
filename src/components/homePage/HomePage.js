@@ -1,4 +1,5 @@
 import './HomePage.css';
+import { Link } from 'react-router-dom';
 import HomeCard from './homeCard/HomeCard';
 import plan_image from '../../res/plan_image.png';
 import design_image from '../../res/design_image.png';
@@ -42,13 +43,31 @@ export default function HomePage()
       </div>
       <div className="home-page-report-container">
         <div className="home-page-report-top-row-container">
-
+          <div className="home-page-report-top-left-container">
+            <div className="home-page-report-total-home-value-title">
+              Total home value
+            </div>
+            <div className="home-page-report-total-home-value">
+              $<span className="home-page-report-total-home-value">0.00</span>
+            </div>
+          </div>
+          <div className="home-page-report-top-right-container">
+            <div className="home-page-report-delta-container">
+              + <span className="home-page-report-delta">0.00</span>%
+            </div>
+            <div className="home-page-report-full-link-container">
+              <Link to="" className="home-page-report-full-link">View Full Report</Link>
+            </div>
+          </div>
         </div>
         <div className="home-page-report-dropdown-container">
-
+          Dropdown
         </div>
         <div className="home-page-report-info-container">
-
+          <div className="home-page-report-info"></div>
+          <div className="home-page-report-info"></div>
+          <div className="home-page-report-info"></div>
+          <div className="home-page-report-info"></div>
         </div>
       </div>
       <div className="home-page-bottom-container">
