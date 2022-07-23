@@ -4,6 +4,7 @@ import HomeCard from './homeCard/HomeCard';
 import plan_image from '../../res/plan_image.png';
 import design_image from '../../res/design_image.png';
 import build_image from '../../res/build_image.png';
+import { IoCaretDownSharp } from 'react-icons/io5';
 
 export default function HomePage()
 {
@@ -61,7 +62,7 @@ export default function HomePage()
           </div>
         </div>
         <div className="home-page-report-dropdown-container">
-          Dropdown
+          Choose project <IoCaretDownSharp className="home-page-report-dropdown-arrow-icon" />
         </div>
         <div className="home-page-report-info-container">
           <div className="home-page-report-info"></div>
