@@ -83,7 +83,7 @@ export default function HomePage()
               <Link to="" className="home-page-report-full-link">View Full Report</Link>
             </div>
           </div>
-          {/* <CircleProgressBar /> */}
+          <CircleProgressBar progress={25} />
         </div>
         <div className="home-page-tracker-container">
           Hello from tabs
