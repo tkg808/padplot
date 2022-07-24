@@ -5,6 +5,7 @@ import plan_image from '../../res/plan_image.png';
 import design_image from '../../res/design_image.png';
 import build_image from '../../res/build_image.png';
 import { IoCaretDownSharp } from 'react-icons/io5';
+import CircleProgressBar from './circleProgressBar/CircleProgressBar';
 
 export default function HomePage()
 {
@@ -37,7 +38,8 @@ export default function HomePage()
             return (<HomeCard
               number={index + 1}
               title={card.title}
-              image={card.image} />
+              image={card.image}
+              key={index} />
             );
           })
         }
@@ -73,7 +75,15 @@ export default function HomePage()
       </div>
       <div className="home-page-bottom-container">
         <div className="home-page-budget-container">
-          Hello from tabs
+          <div className="home-page-budget-header-container">
+            <div className="home-page-budget-title-container">
+              % of Budget
+            </div>
+            <div className="home-page-report-full-link-container">
+              <Link to="" className="home-page-report-full-link">View Full Report</Link>
+            </div>
+          </div>
+          {/* <CircleProgressBar /> */}
         </div>
         <div className="home-page-tracker-container">
           Hello from tabs
