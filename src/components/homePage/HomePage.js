@@ -6,16 +6,24 @@ import design_image from '../../res/design_image.png';
 import build_image from '../../res/build_image.png';
 import { IoCaretDownSharp } from 'react-icons/io5';
 import CircleProgressBar from './circleProgressBar/CircleProgressBar';
+import ProjectItem from './projectItem/ProjectItem';
 
 export default function HomePage()
 {
   const tabs = ["Overview", "Recent"];
+
   const cards =
     [
       { title: "Plan", image: plan_image },
       { title: "Design", image: design_image },
       { title: "Build", image: build_image },
     ];
+
+  const projects =
+    [
+      { title: "Project one", progress: 60 },
+      { title: "Project two", progress: 25 },
+    ]
 
   return (
     <div className="home-page-contaner">
@@ -86,7 +94,24 @@ export default function HomePage()
           <CircleProgressBar progress={25} />
         </div>
         <div className="home-page-tracker-container">
-          Hello from tabs
+          <div className="home-page-tracker-header-container">
+            <div className="home-page-tracker-header-title-container">
+              Project tracker
+            </div>
+            <div className="home-page-report-full-link-container">
+              <Link to="" className="home-page-report-full-link">View Full Report</Link>
+            </div>
+          </div>
+          <div className="home-page-project-list-container">
+            <ul className="home-page-project-list">
+              {
+                projects.map((project, index) => 
+                {
+                  return <ProjectItem />
+                })
+              }
+            </ul>
+          </div>
         </div>
       </div>
     </div>

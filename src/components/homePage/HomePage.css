@@ -103,6 +103,12 @@ div.home-page-report-info
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
+div.home-page-bottom-container
+{
+  display: flex;
+  justify-content: space-between;
+}
+
 div.home-page-budget-container
 {
   width: 294px;
@@ -130,4 +136,31 @@ div.home-page-budget-title-container
 {
   font-size: 16px;
   font-weight: 700;
+}
+
+div.home-page-tracker-container
+{
+  width: 294px;
+  height: 233px;
+  padding: 16px 24px 34px 19px;
+  background-color: #FAFAFA;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.home-page-tracker-header-container
+{
+  width: 100%;
+  margin-bottom: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.home-page-project-list-container
+{
+  width: 100%;
 }

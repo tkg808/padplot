@@ -1,0 +1,37 @@
+li.project-item-container
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 0.5px solid #D9D9D9;
+}
+
+div.project-item-icon-container
+{
+  width: 35px;
+  height: 35px;
+  margin-right: 16px;
+  background-color: #FABB181A;
+  color: #FABB18;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.project-item-title-container
+{
+  padding-right: 16px;
+  flex-grow: 1;
+}
+
+div.project-item-progress-container
+{
+  width: 69px;
+  height: 6px;
+  background-color: #D9D9D9;
+  border-radius: 50px;
+}
