@@ -30,6 +30,7 @@ div.home-page-report-container
   width: 615px;
   height: 207px;
   padding: 27px 24px 0 62px;
+  margin-bottom: 33px;
   background-color: #FAFAFA;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -100,4 +101,33 @@ div.home-page-report-info
   width: 452px;
   height: 21px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+div.home-page-budget-container
+{
+  width: 294px;
+  height: 233px;
+  background-color: #FAFAFA;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div.home-page-budget-header-container
+{
+  width: 100%;
+  /* margin: 14px 23px 0 19px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 84px;
+}
+
+div.home-page-budget-title-container
+{
+  font-size: 16px;
+  font-weight: 700;
 }

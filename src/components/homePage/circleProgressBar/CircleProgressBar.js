@@ -8,7 +8,7 @@ export default function CircleProgressBar(props)
     trackWidth = 10,
     trackColor = "#E1E1E1",
     indicatorWidth = 10,
-    indicatorColor = "#006CCF",
+    indicatorColor = "#387649",
     indicatorCap = "round",
     label = `${progress}%`,
   } = props
