@@ -1,7 +1,8 @@
 import './ProjectItem.css';
 import { TbFolder } from 'react-icons/tb';
+import LinearProgressBar from '../linearProgressBar/LinearProgressBar';
 
-export default function ProjectItem()
+export default function ProjectItem({ title, progress })
 {
   return (
     <li className="project-item-container">
@@ -9,9 +10,10 @@ export default function ProjectItem()
         <TbFolder size={20} />
       </div>
       <div className="project-item-title-container">
-        Project Title
+        {title}
       </div>
       <div className="project-item-progress-container">
+        <LinearProgressBar progress={progress} />
       </div>
     </li>
   );

@@ -27,11 +27,3 @@ div.project-item-title-container
   padding-right: 16px;
   flex-grow: 1;
 }
-
-div.project-item-progress-container
-{
-  width: 69px;
-  height: 6px;
-  background-color: #D9D9D9;
-  border-radius: 50px;
-}

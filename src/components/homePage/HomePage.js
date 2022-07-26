@@ -107,7 +107,10 @@ export default function HomePage()
               {
                 projects.map((project, index) => 
                 {
-                  return <ProjectItem />
+                  return (<ProjectItem
+                    key={index}
+                    title={project.title}
+                    progress={project.progress} />);
                 })
               }
             </ul>

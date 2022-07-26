@@ -1,0 +1,15 @@
+div.linear-progress-bar-track
+{
+  width: 69px;
+  height: 6px;
+  background-color: #D9D9D9;
+  border-radius: 50px;
+}
+
+div.linear-progress-bar-fill
+{
+  width: 0px;
+  height: 6px;
+  background-color: #999999;
+  border-radius: 50px;
+}
