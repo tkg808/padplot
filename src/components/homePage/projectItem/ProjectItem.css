@@ -5,8 +5,6 @@ li.project-item-container
   display: flex;
   align-items: center;
   list-style: none;
-  font-size: 14px;
-  font-weight: 700;
 }
 
 li.project-item-container:not(:first-child)
@@ -32,4 +30,7 @@ div.project-item-title-container
 {
   padding-right: 16px;
   flex-grow: 1;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
 }

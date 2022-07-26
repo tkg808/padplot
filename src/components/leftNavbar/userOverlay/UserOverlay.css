@@ -64,4 +64,14 @@ div.user-overlay-item
 {
   width: 100%;
   padding: 0 0 10px 21px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+div.user-overlay-top-section div:nth-child(2)
+{
+  color: #387649;
 }

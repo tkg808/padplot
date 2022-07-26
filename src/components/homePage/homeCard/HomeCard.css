@@ -13,7 +13,10 @@ div.card-container
 
 p.card-title
 {
+  font-family: Inter;
   font-size: 20px;
+  font-weight: 300;
+  line-height: 23px;
 }
 
 span.card-title-bold
@@ -31,8 +34,9 @@ button.card-button
 {
   width: 80px;
   height: 34px;
-  font-size: 12px;
   background-color: #FFFFFF;
   border: 1px solid black;
   border-radius: 2px;
+  font-family: Arial;
+  font-size: 12px;
 }

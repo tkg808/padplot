@@ -16,6 +16,10 @@ div.home-page-tabs-container
 div.page-tab
 {
   padding: 10px 0 16px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
 }
 
 div.home-page-cards-container
@@ -48,13 +52,20 @@ div.home-page-report-top-left-container
   padding: 2px 0;
   display: flex;
   gap: 31px;
-  font-size: 16px;
+}
+
+div.home-page-report-total-home-value-title
+{
+  font-family: Arial;
   font-weight: 700;
 }
 
 div.home-page-report-total-home-value
 {
   color: #387649;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 19px;
 }
 
 div.home-page-report-top-right-container
@@ -64,10 +75,20 @@ div.home-page-report-top-right-container
   gap: 19px;
 }
 
+div.home-page-report-delta-container
+{
+  font-family: Inter;
+  font-weight: 300;
+  line-height: 19px;
+}
+
 div.home-page-report-full-link-container
 {
   display: flex;
   align-items: center;
+  font-family: Arial;
+  font-size: 10px;
+  line-height: 11px;
 }
 
 a.home-page-report-full-link
@@ -86,9 +107,11 @@ div.home-page-report-dropdown-container
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 10px;
   color: #9E9E9E;
   background-color: #EEEEEE;
+  font-family: Roboto;
+  font-size: 10px;
+  letter-spacing: 0.0044em;
 }
 
 div.home-page-report-info-container
@@ -125,7 +148,6 @@ div.home-page-budget-container
 div.home-page-budget-header-container
 {
   width: 100%;
-  /* margin: 14px 23px 0 19px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +156,7 @@ div.home-page-budget-header-container
 
 div.home-page-budget-title-container
 {
-  font-size: 16px;
+  font-family: Arial;
   font-weight: 700;
 }
 
@@ -158,6 +180,12 @@ div.home-page-tracker-header-container
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+div.home-page-tracker-header-title-container
+{
+  font-family: Arial;
+  font-weight: 700;
 }
 
 div.home-page-project-list-container
