@@ -1,6 +1,6 @@
 import './RightNavbar.css';
 import { AiOutlineSearch } from 'react-icons/ai';
-import logo from '../../res/padplot_logo.png';
+import logo from '../../res/padplot_logo.svg';
 
 export default function RightNavbar()
 {

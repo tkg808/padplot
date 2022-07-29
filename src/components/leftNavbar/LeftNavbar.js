@@ -1,6 +1,6 @@
 import './LeftNavbar.css';
 import { Link } from 'react-router-dom';
-import logo from '../../res/padplot_logo.png';
+import logo from '../../res/padplot_logo.svg';
 import { MdOutlineHome, MdHome } from 'react-icons/md';
 import { AiOutlineBell, AiFillBell } from 'react-icons/ai';
 import { BsBarChart, BsBarChartFill, BsFileText, BsFileTextFill } from 'react-icons/bs';

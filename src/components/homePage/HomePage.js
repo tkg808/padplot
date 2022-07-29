@@ -1,9 +1,9 @@
 import './HomePage.css';
 import { Link } from 'react-router-dom';
 import HomeCard from './homeCard/HomeCard';
-import plan_image from '../../res/plan_image.png';
-import design_image from '../../res/design_image.png';
-import build_image from '../../res/build_image.png';
+import plan_image from '../../res/plan_image.svg';
+import design_image from '../../res/design_image.svg';
+import build_image from '../../res/build_image.svg';
 import { IoCaretDownSharp } from 'react-icons/io5';
 import CircleProgressBar from './circleProgressBar/CircleProgressBar';
 import ProjectItem from './projectItem/ProjectItem';
