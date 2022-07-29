@@ -50,6 +50,12 @@ button.home-page-new-project-button
   font-size: 14px;
   font-weight: 600;
   line-height: 17px;
+  transition-duration: 0.3s;
+}
+
+button.home-page-new-project-button:hover
+{
+  background-color: #595959;
 }
 
 div.home-page-cards-container

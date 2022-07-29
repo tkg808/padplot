@@ -43,6 +43,12 @@ button.right-nav-premium-button
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
+  transition-duration: 0.3s;
+}
+
+button.right-nav-premium-button:hover
+{
+  background-color: #454545;
 }
 
 div.right-nav-search-form-container
