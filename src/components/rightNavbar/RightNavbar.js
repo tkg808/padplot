@@ -17,21 +17,23 @@ export default function RightNavbar()
             Get unlimited access
           </button>
         </div>
-        <form className="right-nav-search-form">
-          <AiOutlineSearch className="right-nav-search-icon" size={32} />
-          <label htmlFor="right-nav-search" className="right-nav-search-label" />
-          <input type="text" id="right-nav-search" placeholder="Search" />
-        </form>
+        <div className="right-nav-search-form-container">
+          <form className="right-nav-search-form">
+            <AiOutlineSearch className="right-nav-search-icon" size={32} />
+            <label htmlFor="right-nav-search" className="right-nav-search-label" />
+            <input type="text" id="right-nav-search" placeholder="Search" />
+          </form>
+        </div>
         <section className="right-nav-news-section">
           <div className="right-nav-title-container">
             <div className="right-nav-title-dot" />
-            <h4 className="right-nav-news-title">What's happening in the markets today</h4>
+            What's happening in the markets today
           </div>
         </section>
         <section className="right-nav-recommendations-section">
           <div className="right-nav-title-container">
             <div className="right-nav-title-dot" />
-            <h4 className="right-nav-recommendations-title">Recommended topics</h4>
+            Recommended topics
           </div>
           <div className="right-nav-recommendations-container">
             {topics.map((topic, index) =>
