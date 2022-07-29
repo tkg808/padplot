@@ -4,10 +4,17 @@ div.home-page-container
   flex-direction: column;
 }
 
+div.home-page-tabs-row-container
+{
+  width: 100%;
+  margin-bottom: 33px;
+  display: flex;
+  justify-content: space-between;
+}
+
 div.home-page-tabs-container
 {
   width: 360px;
-  margin-bottom: 33px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   display: flex;
   gap: 43px;
@@ -19,6 +26,29 @@ div.page-tab
   font-family: Inter;
   font-size: 14px;
   font-weight: 500;
+  line-height: 17px;
+}
+
+.home-page-new-project-button-plus-icon
+{
+  margin-right: 5px;
+}
+
+button.home-page-new-project-button
+{
+  width: 143px;
+  height: 42px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #292929;
+  border-style: none;
+  border-radius: 2px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 17px;
 }
 

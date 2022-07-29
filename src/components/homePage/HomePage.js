@@ -1,5 +1,6 @@
 import './HomePage.css';
 import { Link } from 'react-router-dom';
+import { TbPlus } from 'react-icons/tb';
 import HomeCard from './homeCard/HomeCard';
 import plan_image from '../../res/plan_image.svg';
 import design_image from '../../res/design_image.svg';
@@ -27,17 +28,26 @@ export default function HomePage()
 
   return (
     <div className="home-page-contaner">
-      <div className="home-page-tabs-container">
-        {
-          tabs.map((tab, index) =>
+      <div className="home-page-tabs-row-container">
+        <div className="home-page-tabs-container">
           {
-            return (
-              <div className="home-page-tab page-tab" key={index} title={tab}>
-                {tab}
-              </div>
-            );
-          })
-        }
+            tabs.map((tab, index) =>
+            {
+              return (
+                <div className="home-page-tab page-tab" key={index} title={tab}>
+                  {tab}
+                </div>
+              );
+            })
+          }
+        </div>
+        <div className="home-page-new-project-button-container">
+          <button className="home-page-new-project-button">
+            <TbPlus
+              className="home-page-new-project-button-plus-icon"
+              size={24} /> New Project
+          </button>
+        </div>
       </div>
       <div className="home-page-cards-container">
         {
