@@ -48,10 +48,12 @@ export default function LeftNavbar({ currPage, setCurrPage, showOverlay, setShow
         </div>
       </div>
       <div className="left-nav-bot-container">
-        <div className="left-nav-pill-container" onClick={() => setShowOverlay(!showOverlay)}>
+        <div
+          className="left-nav-pill-container"
+          onClick={() => setShowOverlay(!showOverlay)}>
           {showOverlay && <UserOverlay />}
           <IoPersonCircle className="pill-person-icon" size={32} />
-          <GoChevronDown className="pill-arrow-icon" size={16} />
+          <GoChevronDown className="pill-arrow-icon" size={16} style={showOverlay && { transform: "rotate(180deg" }} />
         </div>
       </div>
     </nav>

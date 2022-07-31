@@ -57,6 +57,11 @@ div.left-nav-pill-container
   position: relative;
 }
 
+div.left-nav-pill-container:hover
+{
+  cursor: pointer;
+}
+
 .pill-person-icon
 {
   margin-left: 3px;
