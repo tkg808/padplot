@@ -1,0 +1,14 @@
+div.home-recent-container
+{
+  width: 100%;
+  padding: 47px 0 47px 41px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+}
