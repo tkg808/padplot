@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import LeftNavbar from './components/leftNavbar/LeftNavbar';
 import HomePage from './components/homePage/HomePage';
+import HomeOverview from './components/homePage/homeOverview/HomeOverview';
 import RightNavbar from './components/rightNavbar/RightNavbar';
 
 export default function App()
@@ -25,7 +26,11 @@ export default function App()
       <main className="main-container">
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} >
+            <Route index element={<HomeOverview />} />
+            <Route path="overview" element={<HomeOverview />} />
+            <Route path="recent" element={<div>Recent is working</div>} />
+          </Route>
         </Routes>
       </main>
       <RightNavbar />
