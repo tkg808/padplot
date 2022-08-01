@@ -17,28 +17,28 @@ export default function LeftNavbar({ currPage, setCurrPage, showOverlay, setShow
           <img src={logo} alt="nav-logo" className="left-nav-logo" />
         </div>
         <div className="left-nav-top-icon-container">
-          <Link to="" onClick={() => setCurrPage("home")}>
+          <Link to="/home" onClick={() => setCurrPage("home")}>
             {
               currPage === "home" ?
                 <MdHome className="left-nav-icon" size={21} /> :
                 <MdOutlineHome className="left-nav-icon" size={21} />
             }
           </Link>
-          <Link to="" onClick={() => setCurrPage("notifications")}>
+          <Link to="/notifications" onClick={() => setCurrPage("notifications")}>
             {
               currPage === "notifications" ?
                 <AiFillBell className="left-nav-icon" size={17} /> :
                 <AiOutlineBell className="left-nav-icon" size={17} />
             }
           </Link>
-          <Link to="" onClick={() => setCurrPage("analytics")}>
+          <Link to="/analytics" onClick={() => setCurrPage("analytics")}>
             {
               currPage === "analytics" ?
                 <BsBarChartFill className="left-nav-icon" size={18.5} /> :
                 <BsBarChart className="left-nav-icon" size={18.5} />
             }
           </Link>
-          <Link to="" onClick={() => setCurrPage("newProject")}>
+          <Link to="/new-project" onClick={() => setCurrPage("newProject")}>
             {
               currPage === "newProject" ?
                 <BsFileTextFill className="left-nav-icon" size={13} /> :

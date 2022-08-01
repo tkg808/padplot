@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import LeftNavbar from './components/leftNavbar/LeftNavbar';
 import HomePage from './components/homePage/HomePage';
 import RightNavbar from './components/rightNavbar/RightNavbar';
@@ -22,7 +23,10 @@ export default function App()
         showOverlay={showOverlay}
         setShowOverlay={setShowOverlay} />
       <main className="main-container">
-        {currPage === "home" && <HomePage />}
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<HomePage />} />
+        </Routes>
       </main>
       <RightNavbar />
     </div>
