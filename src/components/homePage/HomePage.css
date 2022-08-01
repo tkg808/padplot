@@ -18,15 +18,7 @@ div.home-page-tabs-container
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   display: flex;
   gap: 43px;
-}
-
-div.page-tab
-{
-  padding: 10px 0 16px;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 17px;
+  position: relative;
 }
 
 .home-page-new-project-button-plus-icon
