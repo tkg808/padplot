@@ -1,5 +1,4 @@
 import './HomePage.css';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TbPlus } from 'react-icons/tb';
 import HomeCard from './homeCard/HomeCard';
@@ -9,17 +8,11 @@ import build_image from '../../res/build_image.svg';
 import { IoCaretDownSharp } from 'react-icons/io5';
 import CircleProgressBar from './circleProgressBar/CircleProgressBar';
 import ProjectItem from './projectItem/ProjectItem';
-import Tab from './tab/Tab';
-import TabUnderline from './tabUnderline/TabUnderline';
+import TabsGroup from './tabsGroup/TabsGroup';
 
 export default function HomePage()
 {
-  const tabs = ["Overview", "Review"];
-
-  const [tabPosition, setTabPosition] = useState({
-    left: 0,
-    width: 0
-  });
+  const homeTabs = ["Overview", "Review"];
 
   const cards =
     [
@@ -37,19 +30,7 @@ export default function HomePage()
   return (
     <div className="home-page-contaner">
       <div className="home-page-tabs-row-container">
-        <div className="home-page-tabs-container">
-          {
-            tabs.map((tab, index) =>
-            {
-              return (
-                <Tab
-                  key={index}
-                  tab={tab}
-                  setTabPosition={setTabPosition} />);
-            })
-          }
-          <TabUnderline tabPosition={tabPosition} />
-        </div>
+        <TabsGroup tabsList={homeTabs} />
         <div className="home-page-new-project-button-container">
           <button className="home-page-new-project-button">
             <TbPlus
@@ -136,6 +117,6 @@ export default function HomePage()
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

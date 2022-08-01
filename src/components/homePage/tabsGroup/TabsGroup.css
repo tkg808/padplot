@@ -1,0 +1,8 @@
+div.tabs-group-container
+{
+  width: 360px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 43px;
+  position: relative;
+}

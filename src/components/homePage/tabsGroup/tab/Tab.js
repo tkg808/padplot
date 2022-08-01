@@ -1,11 +1,11 @@
 import './Tab.css';
 
-export default function Tab({ tab, setTabPosition })
+export default function Tab({ tab, setCurrentTab })
 {
   return (
     <div
       className="home-page-tab page-tab"
-      onClick={(event) => setTabPosition({
+      onClick={(event) => setCurrentTab({
         left: event.target.offsetLeft,
         width: event.target.offsetWidth
       })}>

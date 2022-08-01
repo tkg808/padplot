@@ -6,3 +6,8 @@ div.page-tab
   font-weight: 500;
   line-height: 17px;
 }
+
+div.page-tab:hover
+{
+  cursor: pointer;
+}

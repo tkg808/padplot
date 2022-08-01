@@ -12,15 +12,6 @@ div.home-page-tabs-row-container
   justify-content: space-between;
 }
 
-div.home-page-tabs-container
-{
-  width: 360px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  display: flex;
-  gap: 43px;
-  position: relative;
-}
-
 .home-page-new-project-button-plus-icon
 {
   margin-right: 5px;
