@@ -1,12 +1,10 @@
 import "./TabUnderline.css";
 
-export default function TabUnderline({ currentTab })
+export default function TabUnderline({ currTab })
 {
-  let underlinePosition = Math.max(0, currentTab.left + Math.floor(((currentTab.width - 62) / 2)));
-
   return (
     <div
       className="tab-underline"
-      style={{ left: underlinePosition }} />
+      style={{ width: currTab.barSize, left: currTab.barLeft }} />
   );
 }

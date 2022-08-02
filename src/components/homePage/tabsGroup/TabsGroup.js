@@ -1,15 +1,9 @@
 import "./TabsGroup.css";
-import { useState } from 'react';
 import Tab from './tab/Tab';
 import TabUnderline from './tabUnderline/TabUnderline';
 
-export default function TabsGroup({ tabsList })
+export default function TabsGroup({ tabsList, currTab, setCurrTab })
 {
-  const [currentTab, setCurrentTab] = useState({
-    left: 0,
-    width: 0
-  });
-
   return (
     <div className="tabs-group-container">
       {
@@ -18,10 +12,10 @@ export default function TabsGroup({ tabsList })
           return <Tab
             key={index}
             tab={tab}
-            setCurrentTab={setCurrentTab} />
+            setCurrTab={setCurrTab} />
         })
       }
-      <TabUnderline currentTab={currentTab} />
+      <TabUnderline currTab={currTab} />
     </div>
   );
 }
