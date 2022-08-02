@@ -1,6 +1,6 @@
 import "./TabsGroup.css";
 import Tab from './tab/Tab';
-import TabUnderline from './tabUnderline/TabUnderline';
+import TabBar from './tabBar/TabBar';
 
 export default function TabsGroup({ tabsList, currTab, setCurrTab })
 {
@@ -15,7 +15,7 @@ export default function TabsGroup({ tabsList, currTab, setCurrTab })
             setCurrTab={setCurrTab} />
         })
       }
-      <TabUnderline currTab={currTab} />
+      <TabBar currTab={currTab} />
     </div>
   );
 }
