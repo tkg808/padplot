@@ -1,9 +1,11 @@
 div.tab-bar
 {
-  width: 62px;
   height: 3px;
   position: absolute;
   bottom: -1.5px;
   background-color: #535353;
   border-radius: 3px;
+  transition-property: width, left;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
