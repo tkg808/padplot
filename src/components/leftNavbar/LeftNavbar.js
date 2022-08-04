@@ -14,9 +14,9 @@ export default function LeftNavbar({ currPage, setCurrPage, showOverlay, setShow
     <nav className="left-nav-container">
       <div className="left-nav-top-container">
         <div className="left-nav-logo-container">
-          <img src={logo} alt="nav-logo" className="left-nav-logo" />
+          <img src={logo} alt="left-nav-logo" className="left-nav-logo" />
         </div>
-        <div className="left-nav-top-icon-container">
+        <div className="left-nav-top-icon-container" data-testid="left-nav-top-icon-container">
           <Link to="/home" onClick={() => setCurrPage("home")}>
             {
               currPage === "home" ?
@@ -50,7 +50,8 @@ export default function LeftNavbar({ currPage, setCurrPage, showOverlay, setShow
       <div className="left-nav-bot-container">
         <div
           className="left-nav-pill-container"
-          onClick={() => setShowOverlay(!showOverlay)}>
+          onClick={() => setShowOverlay(!showOverlay)}
+          data-testid="left-nav-pill-container">
           {showOverlay && <UserOverlay />}
           <IoPersonCircle className="pill-person-icon" size={32} />
           <GoChevronDown className="pill-arrow-icon" size={16} style={showOverlay && { transform: "rotate(180deg" }} />
