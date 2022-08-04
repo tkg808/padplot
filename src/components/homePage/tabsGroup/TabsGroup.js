@@ -5,7 +5,7 @@ import TabBar from './tabBar/TabBar';
 export default function TabsGroup({ tabsList, currTab, setCurrTab })
 {
   return (
-    <div className="tabs-group-container">
+    <div className="tabs-group-container" data-testid="tabs-group-container">
       {
         tabsList.map((tab, index) =>
         {
