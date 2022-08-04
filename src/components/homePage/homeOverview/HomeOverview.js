@@ -25,7 +25,7 @@ export default function HomeOverview()
 
   return (
     <div className="home-overview-container">
-      <div className="home-overview-cards-container">
+      <div className="home-overview-cards-container" >
         {
           cards.map((card, index) => 
           {
