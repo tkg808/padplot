@@ -9,7 +9,7 @@ export default function RightNavbar()
   return (
     <nav className="right-nav-container">
       <div className="right-nav-logo-container">
-        <img src={logo} alt="nav-logo" className="right-nav-logo" />
+        <img src={logo} alt="right-nav-logo" className="right-nav-logo" />
       </div>
       <div className="right-nav-content-container">
         <div className="right-nav-premium-button-container">
@@ -18,24 +18,24 @@ export default function RightNavbar()
           </button>
         </div>
         <div className="right-nav-search-form-container">
-          <form className="right-nav-search-form">
+          <form className="right-nav-search-form" data-testid="right-nav-search-form">
             <AiOutlineSearch className="right-nav-search-icon" size={32} />
             <label htmlFor="right-nav-search" className="right-nav-search-label" />
             <input type="text" id="right-nav-search" placeholder="Search" />
           </form>
         </div>
-        <section className="right-nav-news-section">
+        <section className="right-nav-news-section" data-testid="right-nav-section">
           <div className="right-nav-title-container">
             <div className="right-nav-title-dot" />
             What's happening in the markets today
           </div>
         </section>
-        <section className="right-nav-recommendations-section">
+        <section className="right-nav-recommendations-section" data-testid="right-nav-section">
           <div className="right-nav-title-container">
             <div className="right-nav-title-dot" />
             Recommended topics
           </div>
-          <div className="right-nav-recommendations-container">
+          <div className="right-nav-recommendations-container" data-testid="right-nav-recommendations-container">
             {topics.map((topic, index) =>
             {
               return (
