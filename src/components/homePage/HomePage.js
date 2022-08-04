@@ -25,7 +25,10 @@ export default function HomePage()
   return (
     <div className="home-page-container">
       <div className="home-page-tabs-row-container">
-        <TabsGroup tabsList={homeTabs} currTab={homeTab} setCurrTab={setHomeTab} />
+        <TabsGroup
+          tabsList={homeTabs}
+          currTab={homeTab}
+          setCurrTab={setHomeTab} />
         <div className="home-page-new-project-button-container">
           <button className="home-page-new-project-button">
             <TbPlus
