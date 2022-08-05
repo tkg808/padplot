@@ -6,3 +6,15 @@ div.tabs-group-container
   gap: 43px;
   position: relative;
 }
+
+div.tab-bar
+{
+  height: 3px;
+  position: absolute;
+  bottom: -1.5px;
+  background-color: #535353;
+  border-radius: 3px;
+  transition-property: width, left;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}

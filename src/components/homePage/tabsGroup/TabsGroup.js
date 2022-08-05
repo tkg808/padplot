@@ -1,6 +1,5 @@
 import "./TabsGroup.css";
 import Tab from './tab/Tab';
-import TabBar from './tabBar/TabBar';
 
 export default function TabsGroup({ tabsList, currTab, setCurrTab })
 {
@@ -15,7 +14,9 @@ export default function TabsGroup({ tabsList, currTab, setCurrTab })
             setCurrTab={setCurrTab} />
         })
       }
-      <TabBar currTab={currTab} />
+      <div
+        className="tab-bar"
+        style={{ width: currTab.barSize, left: currTab.barLeft }} />
     </div>
   );
 }

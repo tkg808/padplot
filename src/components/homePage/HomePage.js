@@ -1,5 +1,5 @@
 import './HomePage.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { TbPlus } from 'react-icons/tb';
 import TabsGroup from './tabsGroup/TabsGroup';
@@ -14,16 +14,8 @@ export default function HomePage()
 
   const [homeTab, setHomeTab] = useState(homeTabs[0]);
 
-  useEffect(() =>
-  {
-    if (window.location.pathname === "/home")
-    {
-      setHomeTab(homeTabs[0]);
-    }
-  }, []);
-
   return (
-    <div className="home-page-container">
+    <div className="home-page-container" >
       <div className="home-page-tabs-row-container">
         <TabsGroup
           tabsList={homeTabs}
@@ -37,7 +29,7 @@ export default function HomePage()
           </button>
         </div>
       </div>
-      <div className="home-page-content-container">
+      <div className="home-page-content-container" >
         <Outlet />
       </div>
     </div >
