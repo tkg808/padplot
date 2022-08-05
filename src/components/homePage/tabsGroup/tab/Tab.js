@@ -6,7 +6,7 @@ export default function Tab({ tab, setCurrTab })
   return (
     <Link to={tab.linkPath}>
       <div
-        className="home-page-tab page-tab"
+        className="page-tab"
         onClick={(event) => setCurrTab({
           title: tab.title,
           linkPath: tab.linkPath,
