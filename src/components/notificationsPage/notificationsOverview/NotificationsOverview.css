@@ -1,0 +1,23 @@
+div.notifications-overview-container
+{
+  width: 100%;
+}
+
+div.notifications-overview-empty-list-display
+{
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+a.notifications-overview-older-notifications-link
+{
+  font-size: 10px;
+  line-height: 12px;
+  color: #006CCF
+}

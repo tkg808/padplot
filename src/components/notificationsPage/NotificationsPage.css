@@ -5,7 +5,7 @@ div.notifications-page-container
   flex-direction: column;
 }
 
-div.home-page-top-row-container
+div.notifications-page-top-row-container
 {
   width: 100%;
   margin-bottom: 33px;

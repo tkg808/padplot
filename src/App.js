@@ -7,6 +7,7 @@ import HomePage from './components/homePage/HomePage';
 import HomeOverview from './components/homePage/homeOverview/HomeOverview';
 import HomeRecent from './components/homePage/homeRecent/HomeRecent';
 import NotificationsPage from './components/notificationsPage/NotificationsPage';
+import NotificationsOverview from './components/notificationsPage/notificationsOverview/NotificationsOverview';
 
 export default function App()
 {
@@ -34,6 +35,9 @@ export default function App()
             <Route path="recent" element={<HomeRecent />} />
           </Route>
           <Route path="/notifications" element={<NotificationsPage />} >
+            <Route index element={<NotificationsOverview />} />
+            <Route path="overview" element={<NotificationsOverview />} />
+            {/* <Route path="messages" element={<NotificationsMessages />} /> */}
           </Route>
         </Routes>
       </main>
