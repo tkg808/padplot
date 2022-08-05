@@ -37,7 +37,7 @@ export default function App()
           <Route path="/notifications" element={<NotificationsPage />} >
             <Route index element={<NotificationsOverview />} />
             <Route path="overview" element={<NotificationsOverview />} />
-            {/* <Route path="messages" element={<NotificationsMessages />} /> */}
+            <Route path="messages" element={<NotificationsOverview />} />
           </Route>
         </Routes>
       </main>
