@@ -2,10 +2,11 @@ import './App.css';
 import { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import LeftNavbar from './components/leftNavbar/LeftNavbar';
+import RightNavbar from './components/rightNavbar/RightNavbar';
 import HomePage from './components/homePage/HomePage';
 import HomeOverview from './components/homePage/homeOverview/HomeOverview';
 import HomeRecent from './components/homePage/homeRecent/HomeRecent';
-import RightNavbar from './components/rightNavbar/RightNavbar';
+import NotificationsPage from './components/notificationsPage/NotificationsPage';
 
 export default function App()
 {
@@ -31,6 +32,8 @@ export default function App()
             <Route index element={<HomeOverview />} />
             <Route path="overview" element={<HomeOverview />} />
             <Route path="recent" element={<HomeRecent />} />
+          </Route>
+          <Route path="/notifications" element={<NotificationsPage />} >
           </Route>
         </Routes>
       </main>

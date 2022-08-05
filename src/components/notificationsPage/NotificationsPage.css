@@ -1,0 +1,13 @@
+div.notifications-page-container
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div.home-page-top-row-container
+{
+  width: 100%;
+  margin-bottom: 33px;
+  display: flex;
+}
