@@ -30,7 +30,7 @@ describe("HomePage renders", () =>
       </Router>
     );
 
-    expect(screen.getByText("Overview")).toHaveClass("home-page-tab");
+    expect(screen.getByText("Overview")).toHaveClass("page-tab");
   })
 
   test("recent tab renders", async () =>
@@ -41,7 +41,7 @@ describe("HomePage renders", () =>
       </Router>
     );
 
-    expect(screen.getByText("Recent")).toHaveClass("home-page-tab");
+    expect(screen.getByText("Recent")).toHaveClass("page-tab");
   })
 
   test("new project button renders", async () =>
