@@ -10,6 +10,8 @@ import NotificationsPage from './components/notificationsPage/NotificationsPage'
 import NotificationsOverview from './components/notificationsPage/notificationsOverview/NotificationsOverview';
 import AnalyticsPage from './components/analyticsPage/AnalyticsPage';
 import AnalyticsOverview from './components/analyticsPage/analyticsOverview/AnalyticsOverview';
+import NewProjectPage from './components/newProjectPage/NewProjectPage';
+import NewProjectPlan from './components/newProjectPage/newProjectPlan/NewProjectPlan';
 
 export default function App()
 {
@@ -46,6 +48,12 @@ export default function App()
             <Route path="overview" element={<AnalyticsOverview />} />
             <Route path="budget" element={<AnalyticsOverview />} />
             <Route path="projects" element={<AnalyticsOverview />} />
+          </Route>
+          <Route path="/new-project" element={<NewProjectPage />} >
+            <Route index element={<NewProjectPlan />} />
+            <Route path="plan" element={<NewProjectPlan />} />
+            <Route path="design" element={<NewProjectPlan />} />
+            <Route path="build" element={<NewProjectPlan />} />
           </Route>
         </Routes>
       </main>
