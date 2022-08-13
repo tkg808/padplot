@@ -8,6 +8,8 @@ import HomeOverview from './components/homePage/homeOverview/HomeOverview';
 import HomeRecent from './components/homePage/homeRecent/HomeRecent';
 import NotificationsPage from './components/notificationsPage/NotificationsPage';
 import NotificationsOverview from './components/notificationsPage/notificationsOverview/NotificationsOverview';
+import AnalyticsPage from './components/analyticsPage/AnalyticsPage';
+import AnalyticsOverview from './components/analyticsPage/analyticsOverview/AnalyticsOverview';
 
 export default function App()
 {
@@ -38,6 +40,12 @@ export default function App()
             <Route index element={<NotificationsOverview />} />
             <Route path="overview" element={<NotificationsOverview />} />
             <Route path="messages" element={<NotificationsOverview />} />
+          </Route>
+          <Route path="/analytics" element={<AnalyticsPage />} >
+            <Route index element={<AnalyticsOverview />} />
+            <Route path="overview" element={<AnalyticsOverview />} />
+            <Route path="budget" element={<AnalyticsOverview />} />
+            <Route path="projects" element={<AnalyticsOverview />} />
           </Route>
         </Routes>
       </main>
